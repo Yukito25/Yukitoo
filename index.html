@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang chủ - Web đọc tiểu thuyết</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="navbar">
+    <div>
+      <a href="index.html">Trang chủ</a>
+    </div>
+    <div id="user-info"></div>
+  </div>
+  <div class="container">
+    <h1>Danh sách tiểu thuyết</h1>
+    <!-- Thanh tìm kiếm -->
+    <div style="margin-bottom: 20px;">
+      <input type="text" id="search-input" placeholder="Tìm kiếm tiểu thuyết..." oninput="searchNovels()" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+    </div>
+    <div id="auth-forms">
+      <div id="register-form" style="margin-bottom: 20px;">
+        <h3>Đăng ký</h3>
+        <input type="text" id="reg-username" placeholder="Tên đăng nhập">
+        <input type="password" id="reg-password" placeholder="Mật khẩu">
+        <button onclick="register()">Đăng ký</button>
+        <p id="reg-message"></p>
+      </div>
+      <div id="login-form" style="margin-bottom: 20px;">
+        <h3>Đăng nhập</h3>
+        <input type="text" id="login-username" placeholder="Tên đăng nhập">
+        <input type="password" id="login-password" placeholder="Mật khẩu">
+        <button onclick="login()">Đăng nhập</button>
+        <p id="login-message"></p>
+      </div>
+    </div>
+    <div id="novel-list"></div>
+  </div>
+  <script src="js/app.js"></script>
+  <script>
+    loadNovels();
+    updateAuthUI();
+  </script>
+</body>
+</html>
