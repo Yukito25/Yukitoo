@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Đọc chương</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="navbar">
+    <div>
+      <a href="index.html">Trang chủ</a>
+      <span id="novel-link"></span>
+    </div>
+    <div id="user-info"></div>
+  </div>
+  <div class="container">
+    <h2 id="chapter-title"></h2>
+    <div id="chapter-content"></div>
+    <div id="premium-message" style="color:#dc3545;"></div>
+    <button id="mark-read-btn" class="button" style="margin-top:15px;">Đánh dấu đã đọc</button>
+    <div style="margin-top:20px;">
+      <a href="#" id="prev-chapter" class="button">Chương trước</a>
+      <a href="#" id="next-chapter" class="button" style="margin-left:10px;">Chương tiếp</a>
+    </div>
+
+    <!-- Bình luận -->
+    <div id="comments-section" style="margin-top:40px;">
+      <h3>Bình luận</h3>
+      <div id="comments-list" style="margin-bottom:20px;"></div>
+      <div id="comment-form"></div>
+    </div>
+  </div>
+  <script src="js/app.js"></script>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const novelId = parseInt(params.get('novelId'));
+    const chapterId = parseInt(params.get('chapterId'));
+    loadChapter(novelId, chapterId);
+    updateAuthUI();
+  </script>
+</body>
+</html>
