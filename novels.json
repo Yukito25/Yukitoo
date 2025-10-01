@@ -1,0 +1,56 @@
+{
+  "novels": [
+    {
+      "id": 1,
+      "title": "Thế Giới Hậu Tận Thế",
+      "author": "Nguyễn Văn A",
+      "description": "Một câu chuyện giả tưởng về hành trình sinh tồn trong thế giới hậu tận thế.",
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Khởi đầu",
+          "content": "<p>Ngày tận thế xảy ra một cách bất ngờ, mọi thứ trở nên hỗn loạn. Nhân vật chính thức tỉnh giữa đống đổ nát và bắt đầu hành trình tìm kiếm sự sống.</p>",
+          "premium": false
+        },
+        {
+          "id": 2,
+          "title": "Hành trình",
+          "content": "<p>Sau khi rời khỏi thành phố, nhân vật gặp gỡ những người sống sót khác. Họ cùng nhau đối mặt với những thử thách nguy hiểm.</p>",
+          "premium": true
+        },
+        {
+          "id": 3,
+          "title": "Đối mặt",
+          "content": "<p>Nhóm người sống sót phải đối mặt với kẻ thù mới – những kẻ cướp bóc. Tình bạn và lòng tin bị thử thách.</p>",
+          "premium": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Tình Yêu Thời Chiến",
+      "author": "Trần Thị B",
+      "description": "Một câu chuyện tình lãng mạn diễn ra trong bối cảnh chiến tranh khốc liệt.",
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Gặp gỡ",
+          "content": "<p>Ở một ngôi làng nhỏ, hai con người xa lạ gặp nhau dưới làn mưa bom đạn.</p>",
+          "premium": false
+        },
+        {
+          "id": 2,
+          "title": "Chia ly",
+          "content": "<p>Chiến tranh buộc họ phải xa nhau, mỗi người đi về một hướng với lời hứa hẹn tái ngộ.</p>",
+          "premium": true
+        },
+        {
+          "id": 3,
+          "title": "Tái ngộ",
+          "content": "<p>Sau nhiều năm, họ gặp lại nhau trong những hoàn cảnh trớ trêu. Tình yêu liệu có còn nguyên vẹn?</p>",
+          "premium": true
+        }
+      ]
+    }
+  ]
+}

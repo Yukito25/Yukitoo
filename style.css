@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: #fff;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h1 {
+  margin-top: 0;
+}
+
+/* Card container for novel list items */
+.card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  background-color: #fafafa;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 8px 12px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.button.disabled {
+  background-color: #6c757d;
+  pointer-events: none;
+}
+
+.chapter-list li {
+  margin-bottom: 8px;
+}
+
+/* Textarea styling for comments */
+textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-family: inherit;
+}
+
+/* Badge styles for indicating status */
+.badge {
+  display: inline-block;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.75em;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+.badge-success {
+  background-color: #28a745;
+  color: #fff;
+}
+.badge-premium {
+  background-color: #dc3545;
+  color: #fff;
+}
