@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tiểu thuyết</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="navbar">
+    <div>
+      <a href="index.html">Trang chủ</a>
+    </div>
+    <div id="user-info"></div>
+  </div>
+  <div class="container">
+    <div id="novel-detail"></div>
+    <h2>Danh sách chương</h2>
+    <ul id="chapter-list" class="chapter-list"></ul>
+  </div>
+  <script src="js/app.js"></script>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const novelId = parseInt(params.get('id'));
+    loadNovelDetail(novelId);
+    updateAuthUI();
+  </script>
+</body>
+</html>
